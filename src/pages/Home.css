@@ -1,0 +1,382 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background: linear-gradient(90deg, #007bff, #00bfff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa !important;
+  }
+  
+  /* Hero section */
+  .hero-section {
+  padding: 0; /* Remove padding to make it full-screen */
+  height: 100vh; /* Make it take up the full viewport height */
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  /* Hero heading */
+  .hero-section h1 {
+  font-size: 3rem; /* Increase font size for better visibility on large screens */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Add space below heading */
+  }
+  
+  /* Hero paragraph */
+  .hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px; /* Add space below paragraph */
+  }
+  
+  /* Appointment button */
+  .appointment-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1rem; /* Adjust font size for the button */
+  }
+  
+  .appointment-btn:hover {
+  background-color: #0056b3;
+  }
+  
+  /* Layout Adjustments for Mobile */
+  @media (max-width: 767px) {
+  .hero-section h1 {
+  font-size: 2rem; /* Reduce heading size on smaller screens */
+  }
+  
+  .hero-section p {
+  font-size: 1rem; /* Reduce paragraph font size on smaller screens */
+  }
+  
+  .hero-section .container {
+  text-align: center; /* Center the text for mobile */
+  }
+  }
+  
+  
+  
+  
+  /* Appointment Section */
+  .appointment-section {
+    padding: 50px 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .appointment-section .form-control {
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+  
+  .btn-appointment {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-appointment:hover {
+    background-color: #0056b3;
+  }
+  /* Services Section */
+  #services {
+  background-color: #f9f9f9;
+  padding: 80px 15px; /* Adjusted padding for better edge spacing */
+  min-height: 100vh; /* Ensure full height */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Section Title */
+  #services .section-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 100px; /* Reduced margin-top to move it lower */
+  margin-bottom: 15px;
+  text-align: center; /* Center align the title */
+  padding: 0 10px; /* Ensure the title fits better on smaller screens */
+  }
+  
+  /* Section Description */
+  #services .section-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 900px; /* Adjusted max-width for better readability */
+  margin: 0 auto;
+  text-align: center; /* Center align the description */
+  }
+  
+  /* Service Card */
+  .service-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  flex: 1 1 calc(33.333% - 30px); /* Adjust for even distribution of cards */
+  box-sizing: border-box; /* Include padding and margins in width calculation */
+  }
+  
+  .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Service Icon */
+  .service-card .service-icon {
+  font-size: 50px;
+  color: #4CAF50;  /* Green color */
+  margin-bottom: 20px;
+  }
+  
+  /* Service Title */
+  .service-card .service-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+  }
+  
+  /* Service Description */
+  .service-card .service-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 0;
+  }
+  
+  /* Service Cards Wrapper */
+  .service-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the wrapper's width to avoid overflowing */
+  }
+  
+  /* For smaller screens, the cards will stack vertically */
+  @media (max-width: 768px) {
+  .service-cards-wrapper {
+  gap: 20px;
+  flex-direction: column;
+  }
+  .service-card {
+  padding: 20px;
+  flex: 1 1 100%; /* Stack the cards vertically */
+  }
+  .service-card .service-icon {
+  font-size: 40px;
+  }
+  .service-card .service-title {
+  font-size: 20px;
+  }
+  .service-card .service-description {
+  font-size: 14px;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  #services {
+  padding: 60px 15px; /* Adjust padding for smaller screens */
+  }
+  .service-card .service-icon {
+  font-size: 35px;
+  }
+  .service-card .service-title {
+  font-size: 18px;
+  }
+  .service-card .service-description {
+  font-size: 12px;
+  }
+  }
+  
+  
+  
+  /* About Me Section */
+  .doctor-about-me {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Full screen height */
+  }
+  
+  .doctor-image img {
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-top:60px;
+  }
+  
+  .doctor-details {
+    padding-left: 30px;
+  }
+  
+  .doctor-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top:60px;
+  }
+  
+  .doctor-profession {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-background {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-background-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .doctor-care-philosophy {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .care-philosophy-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  .social-icon {
+  transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+  transform: scale(1.2); /* Zoom out effect */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .features h2 {
+      font-size: 1.75rem;
+    }
+  
+    .doctor-name {
+      font-size: 1.75rem;
+    }
+  
+    .doctor-profession {
+      font-size: 1.1rem;
+    }
+  
+    .doctor-details {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .doctor-image {
+      margin-bottom: 20px;
+    }
+  
+    .appointment-section {
+      padding: 30px 10px;
+    }
+  
+    .form-title {
+      font-size: 1.75rem;
+    }
+  
+    .contact-section {
+      padding: 20px 0;
+    }
+  
+    .footer {
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  .hero-section h1 {
+  font-size: 2rem; /* Smaller on mobile */
+  }
+  
+  .hero-section p {
+  font-size: 1rem; /* Smaller on mobile */
+  }
+  
+  .services-section {
+  padding: 80px 0; /* Adjust padding for mobile */
+  }
+  
+  .doctor-about-me {
+  padding: 40px 0; /* Adjust padding for mobile */
+  }
+  }
